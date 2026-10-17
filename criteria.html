@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>振り分けの基準 | SMSみまもり</title>
+<style>body{font-family:-apple-system,"Hiragino Sans",sans-serif;line-height:1.8;color:#1B2421;background:#F4F7F6;margin:0;padding:24px 16px}main{max-width:720px;margin:auto;background:white;border-radius:12px;padding:24px}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:2rem}</style></head>
+<body><main>
+<h1>振り分けの基準</h1>
+<p>SMSみまもりは、iOSがフィルタへ渡す知らない送信者からのSMS/MMS本文を確認します。受信履歴の読み取り、電話番号の信用度照合、危険URLデータベースの検索は行いません。</p>
+<h2>基本チェック</h2>
+<ol>
+<li>企業や公式サイトを装うURL、接続先を隠すURL、IPアドレスへのリンクがあり、支払いや本人確認などの要求を伴う。</li>
+<li>認証コード・暗証番号を相手に伝えさせる要求がある。</li>
+<li>ギフトカードや電子マネーでの支払いを明示的に依頼したり、番号の連絡を求めたりする。支払い可能・完了・利用不可の案内だけでは、この条件で振り分けない。</li>
+<li>周囲への相談を止める内容と、金銭の支払いの表現が重なる。</li>
+<li>公式ドメインではないURLに不審な特徴があり、急がせる表現と、支払い・ログイン・情報入力の要求が重なる。</li>
+</ol>
+<p>短縮URL、国際化ドメイン、特定のドメイン末尾だけでは振り分けません。全角英数やゼロ幅文字を正規化して確認します。企業ドメインの比較はAmazon、Apple、ヤマト運輸、日本郵便、佐川急便の一部に限られ、各社のすべてのドメインを網羅していません。</p>
+<h2>対応端末のAI補強</h2>
+<p>基本チェックで振り分け対象外の本文について、iOS 26以降で利用可能なAppleの端末内AIが、機密情報や認証コードの要求、圧力・秘密を伴う金銭要求の文脈を補足します。直接的で操作的な要求か、根拠が実際の本文に存在するかを確認してから利用します。</p>
+<p>AIが使えない・処理が完了しない・根拠が確認できない場合は基本判定を維持します。基本チェックの迷惑判定をAIが解除することはありません。長文は基本チェックのみで判定します。会話履歴は参照せず、対象は受信した1通です。</p>
+<h2>制約</h2>
+<p>リンク先や短縮URLの転送先は開きません。詐欺をすべて検知できず、正規の連絡を振り分けることもあります。振り分け対象外でも安全を保証しません。メッセージの削除や電話番号のブロックはしません。連絡先、iMessage、通常のメール、他社アプリ、添付画像は対象外です。RCSへの対応は保証していません。</p>
+<p><a href="index.html">サポート</a> · <a href="privacy-policy.html">プライバシーポリシー</a></p>
+</main></body></html>
